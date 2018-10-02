@@ -1,0 +1,29 @@
+
+<h2>{{pageTitle}}</h2>
+<img [src]="imgUrl" alt="image">
+
+<div>
+  <button (click)="incrementCounter()">Click</button>
+  <p>Clicked: {{count}} times</p>
+</div>
+
+<div>
+  <input #nameRef type="text" [(ngModel)]="name">
+  <p>Welcome {{name}}</p>
+</div>
+
+
+<!-- <div>
+  <input type="text" [ngModel]="userName" (ngModelChange)="userName=$event">
+  <p>Welcome {{userName}}</p>
+</div> -->
+
+<div>
+  <input type="text" [ngModel]="userName" (ngModelChange)="biponBiswas($event)">
+  <p>Welcome {{userName}}</p>
+</div>
+
+<div>
+  <input type="text" [(ngModel)]="customerName">
+  <p>Welcome {{customerName}}</p>
+</div>
